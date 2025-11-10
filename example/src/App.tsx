@@ -1,15 +1,27 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'rn-nitro-location-enabler';
+import { useState } from 'react';
+import { View, StyleSheet, Button } from 'react-native';
+import {
+  isLocationEnabled,
+  requestLocationEnabled,
+} from 'rn-nitro-location-enabler';
 
-const result = multiply(3, 7);
+const App = () => {
+  const [isEnabled, setIsEnabled] = useState(isLocationEnabled());
 
-export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button
+        title={!isEnabled ? 'Click to Request' : 'Already Enabled'}
+        disabled={isEnabled}
+        onPress={() => {
+          requestLocationEnabled().then(setIsEnabled);
+        }}
+      />
     </View>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
