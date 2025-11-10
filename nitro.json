@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["rnnitrolocationenabler"],
+  "ios": {
+    "iosModuleName": "RnNitroLocationEnabler"
+  },
+  "android": {
+    "androidNamespace": ["rnnitrolocationenabler"],
+    "androidCxxLibName": "rnnitrolocationenabler"
+  },
+  "autolinking": {
+    "RnNitroLocationEnabler": {
+      "swift": "RnNitroLocationEnabler",
+      "kotlin": "RnNitroLocationEnabler"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
