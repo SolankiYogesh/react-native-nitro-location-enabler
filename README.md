@@ -18,7 +18,7 @@ A lightweight React Native module built with **Nitro Modules** that provides sea
 
 ## 📋 Requirements
 
-- `react-native-nitro-modules` ^0.29.8
+- `react-native-nitro-modules` ^0.35.0
 
 ## 🚀 Installation
 
