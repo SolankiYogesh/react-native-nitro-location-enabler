@@ -9,8 +9,8 @@
   },
   "autolinking": {
     "RnNitroLocationEnabler": {
-      "swift": "RnNitroLocationEnabler",
-      "kotlin": "RnNitroLocationEnabler"
+      "ios": { "language": "swift", "implementationClassName": "RnNitroLocationEnabler" },
+      "android": { "language": "kotlin", "implementationClassName": "RnNitroLocationEnabler" }
     }
   },
   "ignorePaths": ["node_modules"]

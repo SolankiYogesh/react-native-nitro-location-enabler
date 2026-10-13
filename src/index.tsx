@@ -8,7 +8,7 @@ try {
   Module = NitroModules.createHybridObject<RnNitroLocationEnabler>(
     'RnNitroLocationEnabler'
   );
-} catch (error) {
+} catch {
   Module = null;
 }
 
